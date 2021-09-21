@@ -15,12 +15,14 @@
 <meta property="og:site_name" content="myblog">
 <meta property="og:description" content="软件测试一、计算机基础1、硬件系统计算机硬件系统由运算器，控制器，存储器，输入设备和输出设备5部分组成 CPU：运算器ALU+控制器CU 内存外存：存储器 I&#x2F;O设备：输入设备&#x2F;输出设备">
 <meta property="og:locale">
+<meta property="og:image" content="https://pic2.zhimg.com/80/v2-2da482783a71fb778f168bab5d86b6b1_720w.jpg">
 <meta property="article:published_time" content="2021-07-29T06:05:21.000Z">
-<meta property="article:modified_time" content="2021-09-02T07:07:10.329Z">
+<meta property="article:modified_time" content="2021-09-21T09:25:44.637Z">
 <meta property="article:author" content="zxhongyan">
 <meta property="article:tag" content="随笔">
 <meta property="article:tag" content="软件测试">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic2.zhimg.com/80/v2-2da482783a71fb778f168bab5d86b6b1_720w.jpg">
   
     <link rel="alternative" href="/atom.xml" title="myblog" type="application/atom+xml">
   
@@ -298,19 +300,848 @@
 <p>（9）BUG跟踪处理</p>
 <p>（10）N轮之后符合需求</p>
 <p>（11）测试结束</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="三、WEB前端"><a href="#三、WEB前端" class="headerlink" title="三、WEB前端"></a>三、WEB前端</h2><h3 id="1、web前端基础"><a href="#1、web前端基础" class="headerlink" title="1、web前端基础"></a>1、web前端基础</h3><p>web前端包含HTML超文本标记语言、CSS层叠样式、JavaScript逻辑行为。</p>
+<h2 id="三、WEB前端"><a href="#三、WEB前端" class="headerlink" title="三、WEB前端"></a>三、WEB前端</h2><h3 id="1、web前端基础"><a href="#1、web前端基础" class="headerlink" title="1、web前端基础"></a>1、web前端基础</h3><p>web前端包含HTML超文本标记语言、CSS层叠样式、JavaScript逻辑行为。</p>
 <h3 id="2、常用浏览器"><a href="#2、常用浏览器" class="headerlink" title="2、常用浏览器"></a>2、常用浏览器</h3><p>（1）IE：过于落后，只有部分老软件还在使用，内核Trident</p>
 <p>（2）谷歌：一开始使用Webkit，后使用Blink内核</p>
 <p>（3）火狐：使用Gecko内核</p>
 <p>（4）苹果：使用Webkit内核</p>
 <p>（5）欧朋：一开始使用Presto内核，后使用Blink内核</p>
-<h3 id="3、HTML文档"><a href="#3、HTML文档" class="headerlink" title="3、HTML文档"></a>3、HTML文档</h3><p>（1）<code>< !DOCTYPE html ></code>描述当前文档的版本信息</p>
-<p>（2）<code>< html></ html ></code>里面写文档主体内容</p>
-<p>（3）<code>< head ></ head ></code>网站的头部</p>
-<p>（4）<code>< meta charset="UTF-8" ></code>网页的编码，如果不写会出现编码问题</p>
-<p>（5）<code>< title ></ title ></code>内部写入网页的标题</p>
-<p>（6）<code>< body ></ body ></code>内部写入网站的主体</p>
+<h3 id="3、HTML基础"><a href="#3、HTML基础" class="headerlink" title="3、HTML基础"></a>3、HTML基础</h3><p>（1）&lt;!DOCTYPE html&gt;描述当前文档的版本信息</p>
+<p>（2）&lt;html&gt;&lt;/html &gt;里面写文档主体内容</p>
+<p>（3）&lt;head&gt;&lt;/ head&gt;网站的头部</p>
+<p>（4）&lt;meta charset=”UTF-8”&gt;网页的编码，如果不写会出现编码问题</p>
+<p>（5）&lt;title&gt;&lt;/ title&gt;内部写入网页的标题</p>
+<p>（6）&lt;body&gt;&lt;/ body&gt;内部写入网站的主体</p>
+<h3 id="4、HTML常用标签"><a href="#4、HTML常用标签" class="headerlink" title="4、HTML常用标签"></a>4、HTML常用标签</h3><p>&lt;P&gt;&lt;/P&gt;文字段落</p>
+<p>&lt;h1&gt;-&lt;h6&gt;文章标题，从1-6依次变小</p>
+<p>&lt;B&gt;&lt;/B&gt;加粗</p>
+<p>&lt;Strong&gt;&lt;/Strong&gt;加粗，语义化标签</p>
+<p>&lt;I&gt;&lt;/I&gt;斜体字</p>
+<p>&lt;Em&gt;&lt;/Em&gt;斜体字，语义化标签</p>
+<p>&lt;del&gt;&lt;/del&gt;删除线</p>
+<p>&lt;br /&gt;换行</p>
+<p>&lt;a&gt;&lt;/a&gt;超链接</p>
+<p>&lt;img /&gt;插入图片</p>
+<p>&lt;div&gt;&lt;/div&gt;定义文档中的分区或节</p>
+<p>&lt;!– 注释内容 –!&gt;插入图片</p>
+<p>&lt;header&gt;&lt;/header&gt;网站顶部</p>
+<p>&lt;nav&gt;&lt;/nav&gt;导航栏</p>
+<p>&lt;aside&gt;&lt;/aside&gt;侧面导航栏</p>
+<p>&lt;article&gt;&lt;/article&gt;独立的内容块</p>
+<p>&lt;footer&gt;&lt;/footer&gt;网站底部</p>
+<h3 id="5、CSS"><a href="#5、CSS" class="headerlink" title="5、CSS"></a>5、CSS</h3><p>CSS层叠样式表：分为内部样式、外部样式、行内样式</p>
+<p>（1）内部样式：写在HTML文档head中的style标签内</p>
+<p>（2）外部样式：写在外部的.css文件中，用@import或者link标签引入</p>
+<p>（3）行内样式：写在标签内部的style中，不方便修改</p>
+<h3 id="6、CSS选择器"><a href="#6、CSS选择器" class="headerlink" title="6、CSS选择器"></a>6、CSS选择器</h3><p>通配符选择器：*</p>
+<p>标签选择器：p、div、a…</p>
+<p>id选择器：#id</p>
+<p>类选择器：.class</p>
+<p>属性选择器：标签选择器[属性 = ‘属性值’]{ }</p>
+<p>伪类选择器：:hover、:after</p>
+<p>后代选择器：.class1   .class2，用空格表示，可以找到后代中所有的目标</p>
+<p>子代选择器：.class1 &gt; .class2，用&gt;表示，只能找到子代中的目标</p>
+<h3 id="7、CSS选择器权重"><a href="#7、CSS选择器权重" class="headerlink" title="7、CSS选择器权重"></a>7、CSS选择器权重</h3><p>!important&gt;行内样式&gt;id选择器&gt;class选择器&gt;标签选择器&gt;通配选择器</p>
+<h3 id="8、盒子模型"><a href="#8、盒子模型" class="headerlink" title="8、盒子模型"></a>8、盒子模型</h3><p>盒子模型：内容宽高+内边距+边框+外边距</p>
+<p>标准盒子模型：content+2padding+2border+2margin</p>
+<p>IE盒子模型：content=height/width+2padding+2border</p>
+<h2 id="四、MySQL数据库"><a href="#四、MySQL数据库" class="headerlink" title="四、MySQL数据库"></a>四、MySQL数据库</h2><h3 id="1、mysql常用命令"><a href="#1、mysql常用命令" class="headerlink" title="1、mysql常用命令"></a>1、mysql常用命令</h3><p>连接数据库：mysql -u root -p</p>
+<p>显示数据库列表：show databases;</p>
+<p>使用某一数据库：use  db_name;</p>
+<p>显示数据库中的表：show tables;</p>
+<br />
 
+<p>创建数据库：</p>
+<p>create database db_name;</p>
+<br />
+
+<p>创建表：  </p>
+<p>create table table_name(</p>
+<p>id INT NOT NULL,</p>
+<p>name varchar(20),</p>
+<p>PRIMARY KEY(id)</p>
+<p>);</p>
+<br />
+
+<p>删除数据库：drop database db_name;</p>
+<p>删除表：drop table table_name;</p>
+<br />
+
+<p>插入数据：</p>
+<p>inset into table_name values (1,’zhangsan’);</p>
+<p>insert into table_name(id,name) values(1,’zhangsan’),(2,’lisi’),(3,’wangwu’);</p>
+<br />
+
+<p>查询数据：</p>
+<p>select * from table_name;（*号代表所有数据）</p>
+<p>select id,name from table_name;（可以查询单独的某列数据，多列用逗号隔开）</p>
+<p>select distinct * from table_name;（distinct可以去除重复的数据）</p>
+<br />
+
+<p>where子句查询：</p>
+<p>select name from table_name where id=1;</p>
+<br />
+
+<p>and&amp;or运算符：</p>
+<p>AND 和 OR 可在 WHERE 子语句中把两个或多个条件结合起来</p>
+<p>select * from table_name where id=1 and name=”zhangsan”;</p>
+<br />
+
+<p>order by子句：</p>
+<p>ORDER BY 语句用于根据指定的列对结果集进行排序</p>
+<p>ORDER BY 语句默认按照升序ASC对记录进行排序</p>
+<p>如果您希望按照降序对记录进行排序，可以使用 DESC 关键字</p>
+<p>select * from table_name order by id desc;</p>
+<br />
+
+<p>update修改表中数据：</p>
+<p>update table_name set name=’zhang3’ where id=1;(修改数据必须用where子句，否则会将数据库所有数据都修改)</p>
+<br />
+
+<p>delete删除语句：</p>
+<p>delete语句不加where子句会删除表中所有数据</p>
+<p>delete from table_name where id=1;</p>
+<br />
+
+<p>top子句：</p>
+<p>top子句用于规定要返回的记录的数目</p>
+<p>select top 2 * from table_name;（查询2条数据）</p>
+<p>select top 50 percent * from table_name;（查询50%的数据）</p>
+<br />
+
+<p>like子句：</p>
+<p>LIKE 操作符用于在 WHERE 子句中搜索列中的指定模式</p>
+<p>select * from table_name where name like ‘zhang%’;（%代表缺少的字母）</p>
+<br />
+
+<p>in子句：</p>
+<p>IN 操作符允许我们在 WHERE 子句中规定多个值</p>
+<p>select * from table_name where id in(1,2,3);</p>
+<br />
+
+<p>between子句：</p>
+<p>操作符 BETWEEN … AND 会选取介于两个值之间的数据范围</p>
+<p>select * from table_name where id between 1 and 3;（选则1到3之间的数据，包含1，不包含3）</p>
+<br />
+
+<p>inner join联表查询：</p>
+<p>在表中存在至少一个匹配时，INNER JOIN 关键字返回行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT column_name(s)</span><br><span class="line">FROM table_name1</span><br><span class="line">INNER JOIN table_name2 </span><br><span class="line">ON table_name1.column_name=table_name2.column_name</span><br></pre></td></tr></table></figure>
+
+<br />
+
+<p>left join联表查询：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT column_name(s)</span><br><span class="line">FROM table_name1</span><br><span class="line">LEFT JOIN table_name2 </span><br><span class="line">ON table_name1.column_name=table_name2.column_name</span><br></pre></td></tr></table></figure>
+
+<br />
+
+<p>right join联表查询：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT column_name(s)</span><br><span class="line">FROM table_name1</span><br><span class="line">RIGHT JOIN table_name2 </span><br><span class="line">ON table_name1.column_name=table_name2.column_name</span><br></pre></td></tr></table></figure>
+
+<br />
+
+<p>alter table语句：</p>
+<p>ALTER TABLE 语句用于在已有的表中添加、修改或删除列</p>
+<p>在表中添加列：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE table_name</span><br><span class="line">ADD column_name datatype</span><br></pre></td></tr></table></figure>
+
+<p>删除列：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE table_name </span><br><span class="line">DROP COLUMN column_name</span><br></pre></td></tr></table></figure>
+
+<p>修改列或者修改列的数据类型：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE table_name</span><br><span class="line">ALTER COLUMN column_name datatype</span><br></pre></td></tr></table></figure>
+
+<br />
+
+<p>group by语句:</p>
+<p>GROUP BY 语句用于结合合计函数，根据一个或多个列对结果集进行分组</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT column_name, aggregate_function(column_name)</span><br><span class="line">FROM table_name</span><br><span class="line">WHERE column_name operator value</span><br><span class="line">GROUP BY column_name</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="2、常用数据类型"><a href="#2、常用数据类型" class="headerlink" title="2、常用数据类型"></a>2、常用数据类型</h3><p>INT：大整数</p>
+<p>FLOAT：单精度浮点数</p>
+<p>DOUBLE：双精度浮点数</p>
+<p>DECIMAL（A，B）：A代表总长度，B代表小数点后有几位</p>
+<p>DATE：YYYY-MM-DD</p>
+<p>CHAR：定长字符串</p>
+<p>VARCHAR：变长字符串</p>
+<p>TEXT：文本</p>
+<h3 id="3、SQL函数"><a href="#3、SQL函数" class="headerlink" title="3、SQL函数"></a>3、SQL函数</h3><p>avg()：返回某列的平均值</p>
+<p>count()：返回数据的行数</p>
+<p>max()：返回某列的最高值</p>
+<p>min()：返回某列的最低值</p>
+<p>sum()：返回某列的总和</p>
+<h2 id="五、软件测试理论"><a href="#五、软件测试理论" class="headerlink" title="五、软件测试理论"></a>五、软件测试理论</h2><h3 id="1、测试分类"><a href="#1、测试分类" class="headerlink" title="1、测试分类"></a>1、测试分类</h3><p>（1）测试阶段分类</p>
+<p>单元测试：程序的最小模块完成后，进行的测试。可能是一个函数、类或者界面</p>
+<p>集成测试：在单元测试的基础上，把多个模块组装到一起进行测试，重点关注模块和模块之间的接口</p>
+<p>系统测试：软件基本完成，软件项目做为一个整体进行测试，测试的依据是需求说明书</p>
+<p>验收测试：α内测版本、β公测版本、γ接近于正式发布的版本</p>
+<p>（2）按照是否查看源代码分类</p>
+<p>黑盒测试：只测试功能，不关注功能的具体实现方式</p>
+<p>白盒测试：不但关注功能，还要关注代码是如何实现的</p>
+<p>灰盒测试：介于黑盒和白盒之间的一种测试</p>
+<p>（3）按照是否运行来分类</p>
+<p>静态测试：不允许软件，静态的观察软件是否符合预期</p>
+<p>动态测试：运行软件，在运行过程中测试</p>
+<p>（4）按照是否自动化分类</p>
+<p>手工测试：通过测试工程师手工对软件进行测试</p>
+<p>自动化测试：通过编程写代码，通过程序自动化测试软件是否有bug</p>
+<p>（5）其他分类</p>
+<p>冒烟测试：对软件最基本的流程和工作做一个粗略的测试，看最基本的流程是否跑通</p>
+<p>回归测试：当修复bug后，把之前的测试用例在新的代码下进行再次测试</p>
+<p>随机测试：针对软件中的重要功能进行复测</p>
+<p>探索性测试：一边了解和学习项目，一边测试项目</p>
+<h3 id="2、软件质量模型"><a href="#2、软件质量模型" class="headerlink" title="2、软件质量模型"></a>2、软件质量模型</h3><p>功能性：功能的正确性、安全性、依从性</p>
+<p>可靠性：软件要有容错，出现错误后可以很快恢复</p>
+<p>易用性：软件界面、提示、用户使用功能是否得当</p>
+<p>效率性：软件运行要高效</p>
+<p>维护性：软件要维护性好</p>
+<p>可移植性：适应不同的系统</p>
+<h3 id="3、软件开发模型"><a href="#3、软件开发模型" class="headerlink" title="3、软件开发模型"></a>3、软件开发模型</h3><p>（1）瀑布模型</p>
+<ul>
+<li>需求分析<ul>
+<li>研发分析需求说明书</li>
+<li>判断需求的可实现性</li>
+</ul>
+</li>
+<li>概要设计<ul>
+<li>用到具体的技术点</li>
+<li>大致模块划分 </li>
+</ul>
+</li>
+<li>详细设计<ul>
+<li>详细到可以为编码做支持</li>
+<li>类和类的关系、类的设计</li>
+<li>函数设计</li>
+<li>各个接口的细节</li>
+<li>数据库表的关系，字段关系</li>
+</ul>
+</li>
+<li>编码<ul>
+<li>依托于详细设计进行编码操作</li>
+</ul>
+</li>
+<li>测试</li>
+<li>维护<ul>
+<li>软件上线后需要持续维护</li>
+</ul>
+</li>
+</ul>
+<p>瀑布模型的特点：</p>
+<ul>
+<li><p>线性模型</p>
+<p>每一步都是按照顺序来执行</p>
+</li>
+<li><p>文档驱动</p>
+<p>每一步都有文档</p>
+</li>
+</ul>
+<p>瀑布模型的优缺点：</p>
+<ul>
+<li><p>优点</p>
+<p>每个阶段很清晰</p>
+<p>只需要关注后续阶段</p>
+</li>
+<li><p>缺点</p>
+<p>依赖于需求，不能适应需求的变化</p>
+<p>风险到项目后期才体现，失去早期纠正的机会</p>
+</li>
+</ul>
+<hr>
+<p>（2）快速开发模型</p>
+<ul>
+<li><p>一边缺点需求，一边实现</p>
+<p>优点：避免瀑布模型的缺点，可以适应早期的需求变化</p>
+<p>缺点：只适合小型项目</p>
+</li>
+</ul>
+<hr>
+<p>（3）螺旋模型</p>
+<ul>
+<li><p>优点</p>
+<p>引入风险分析</p>
+</li>
+<li><p>缺点</p>
+<p>风险分析需要专业的知识和人员</p>
+</li>
+</ul>
+<h3 id="4、测试模型"><a href="#4、测试模型" class="headerlink" title="4、测试模型"></a>4、测试模型</h3><p>（1）V模型</p>
+<p>需求分析                                                        验收测试</p>
+<p>​        ↘                                                            ↗</p>
+<p>​        概要设计                                        系统测试</p>
+<p>​                ↘                                            ↗</p>
+<p>​                详细设计                        集成测试</p>
+<p>​                        ↘                            ↗</p>
+<p>​                         编码        →    单元测试</p>
+<ul>
+<li><p>优点</p>
+<p>包含了底层和高层的测试过程</p>
+<p>每个步骤都是文档驱动的</p>
+</li>
+<li><p>缺点</p>
+<p>和研发瀑布模型一样，不能适应需求的改变，灵活性不足</p>
+</li>
+</ul>
+<hr>
+<p>（2）W模型</p>
+<p>需求分析                <font color='red'>验收/系统测试设计</font>                                                    交付                        <font color='red'>验收测试</font></p>
+<p>​            ↘                                    ↘                                                    ↗                            ↗</p>
+<p>​            概要设计                    <font color='red'>集成测试设计</font>                                实施                    <font color='red'>系统测试</font></p>
+<p>​                        ↘                                ↘                                ↗                        ↗</p>
+<p>​                            详细设计                <font color='red'>单元测试设计</font>            集成            <font color='red'>集成测试</font></p>
+<p>​                                        ↘                                ↗↘                    ↗</p>
+<p>​                                                            编码                    <font color='red'>单元测试</font></p>
+<ul>
+<li><p>优点</p>
+<p>强调测试伴随着整个软件开发周期，而且测试的对象不仅仅是程序，需求和概要设计同样需要测试</p>
+<p>更早的介入研发工作，可以尽早发现问题，及时处理</p>
+</li>
+<li><p>缺点</p>
+<p>对测试工程师要求比较高，实践起来难度较大</p>
+</li>
+</ul>
+<h3 id="5、测试用例"><a href="#5、测试用例" class="headerlink" title="5、测试用例"></a>5、测试用例</h3><ul>
+<li><p>测试用例（test case）的作用</p>
+<p>为特定的目的而设计的一组测试输入、执行条件和预期结果的文档</p>
+</li>
+<li><p>测试用例八大要素</p>
+<p>用例编号</p>
+<p>用例标题</p>
+<p>所属项目</p>
+<p>用例级别</p>
+<p>预置条件</p>
+<p>测试数据</p>
+<p>执行步骤</p>
+<p>预期结果</p>
+</li>
+<li><p>测试用例演示</p>
+<table>
+<thead>
+<tr>
+<th>用例编号</th>
+<th>用例标题</th>
+<th>测试项目</th>
+<th>用例级别</th>
+<th>预置条件</th>
+<th>测试输入</th>
+<th>执行步骤</th>
+<th>预期结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>zxt001</td>
+<td>测试加法</td>
+<td>计算器</td>
+<td>p03</td>
+<td>/</td>
+<td>1和1</td>
+<td>1.按数字1。2.按+。3.按数字1。4.按=。</td>
+<td>显示结果为2</td>
+</tr>
+<tr>
+<td>zxt002</td>
+<td>测试减法</td>
+<td>计算器</td>
+<td>p03</td>
+<td>/</td>
+<td>10和5</td>
+<td>1.按数字10。2.按-。3.按数字5。4.按=。</td>
+<td>显示结果为5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="6、测试用例设计方法"><a href="#6、测试用例设计方法" class="headerlink" title="6、测试用例设计方法"></a>6、测试用例设计方法</h3><p>（1）等价类划分法</p>
+<ul>
+<li><p>等价类概念</p>
+<p>在所有测试的数据中，具有某种共同特征的数据子集</p>
+</li>
+<li><p>等价类分为</p>
+<ul>
+<li>有效等价类：满足需求的</li>
+<li>无效等价类：不满足需求的</li>
+</ul>
+</li>
+<li><p>案例案例</p>
+<table>
+<thead>
+<tr>
+<th>测试</th>
+<th>有效等价类</th>
+<th>无效等价类</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>输入1-100的数字</td>
+<td>1、20、33</td>
+<td>-1、0、110</td>
+</tr>
+<tr>
+<td>2-10个汉字组成的名字</td>
+<td>张三、李四</td>
+<td>zhang3、li4、张</td>
+</tr>
+<tr>
+<td>6-20位密码，不包含特殊字符、汉字</td>
+<td>zxc123456、abcdef</td>
+<td>@@1234、123、秘密4321</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<hr>
+<p>（2）边界值划分法</p>
+<ul>
+<li><p>边界值化方法概念</p>
+<ul>
+<li><p>上点</p>
+<p>处于边界上的点</p>
+</li>
+<li><p>离点</p>
+<p>离上点最近的点</p>
+</li>
+<li><p>内点</p>
+<p>范围内的点</p>
+</li>
+</ul>
+</li>
+<li><p>开区间和闭区间</p>
+<ul>
+<li>[开始值，结束值]    闭区间—包含开始值和结束值</li>
+<li>(开始值，结束值)    开区间—不包含开始值和结束值</li>
+</ul>
+</li>
+<li><p>演示案例</p>
+<table>
+<thead>
+<tr>
+<th>测试</th>
+<th>上点</th>
+<th>离点</th>
+<th>内点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[20,30]</td>
+<td>20,30</td>
+<td>19,31</td>
+<td>20,21,…,30</td>
+</tr>
+<tr>
+<td>(20,30)</td>
+<td>20,30</td>
+<td>21,29</td>
+<td>21,22,…,29</td>
+</tr>
+<tr>
+<td>(20,30]</td>
+<td>20,30</td>
+<td>21,31</td>
+<td>21,22,…,30</td>
+</tr>
+<tr>
+<td>[20,30)</td>
+<td>20,30</td>
+<td>19,29</td>
+<td>20,21,…,29</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<hr>
+<p>（3）判定表法</p>
+<ul>
+<li><p>判定表</p>
+<p>有多个输入、输出，输入和输出有组合和依赖关系</p>
+</li>
+<li><p>判定表法概念</p>
+<ul>
+<li><p>条件桩</p>
+<p>列出所有输入，顺序无关</p>
+</li>
+<li><p>动作桩</p>
+<p>列出所有输出，顺序无关</p>
+</li>
+<li><p>条件项</p>
+<p>把条件桩中所有能出现的组合都罗列出来</p>
+</li>
+<li><p>动作项</p>
+<p>根据不同条件项的组合产生的动作结果</p>
+</li>
+</ul>
+</li>
+<li><p>使用判定表步骤</p>
+<ul>
+<li><p>先明确需求</p>
+</li>
+<li><p>画判断表</p>
+<p>条件桩、动作桩、条件项不同组合、根据条件项完成动作项</p>
+</li>
+<li><p>编写测试用例</p>
+<p>判定表中的一条规则对应一条测试用例</p>
+</li>
+</ul>
+</li>
+<li><p>演示案例</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>发送账号</th>
+<th>接收账号</th>
+<th>发送信息</th>
+<th>接收信息</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>登录</td>
+<td>不登录</td>
+<td>可以</td>
+<td>不可以</td>
+</tr>
+<tr>
+<td>2</td>
+<td>不登录</td>
+<td>不登录</td>
+<td>不可以</td>
+<td>不可以</td>
+</tr>
+<tr>
+<td>3</td>
+<td>登录</td>
+<td>登录</td>
+<td>可以</td>
+<td>可以</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<hr>
+<p>（4）因果图法</p>
+<ul>
+<li><p>使用因果图步骤</p>
+<p>明确需求</p>
+<p>画因果图</p>
+<p>根据因果图画判定表</p>
+<p>根据判定表写测试用例</p>
+</li>
+<li><p>图形符号</p>
+<p><img src="https://pic2.zhimg.com/80/v2-2da482783a71fb778f168bab5d86b6b1_720w.jpg" alt="因果图"></p>
+</li>
+</ul>
+<hr>
+<p>（5）正交表法</p>
+<ul>
+<li><p>$ L_n(m^k) $</p>
+<p>n表示行数</p>
+<p>k表示列</p>
+<p>m代表列的取值个数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$L_9(3^4)$</span><br><span class="line">9行4列，每列中有3种取值个数</span><br><span class="line">4因素，3水平</span><br></pre></td></tr></table></figure></li>
+<li><p>使用正交表步骤</p>
+<ul>
+<li><p>明确需求</p>
+</li>
+<li><p>绘制正交表</p>
+<p>先确定列数</p>
+<p>确定正交表每列的取值个数</p>
+<p>根据因素和水平可以确定行数</p>
+</li>
+<li><p>根据正交表编写测试用例</p>
+</li>
+</ul>
+</li>
+<li><p>演示案例</p>
+<p>字体：方正、宋体、楷体</p>
+<p>样式：粗体、斜体、下划线</p>
+<p>颜色：红、绿、蓝</p>
+<p>字号：1、2、3</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>字体</th>
+<th>样式</th>
+<th>颜色</th>
+<th>字号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>方正</td>
+<td>粗体</td>
+<td>红</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>方正</td>
+<td>斜体</td>
+<td>绿</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>方正</td>
+<td>下划线</td>
+<td>蓝</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>宋体</td>
+<td>粗体</td>
+<td>红</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>宋体</td>
+<td>斜体</td>
+<td>绿</td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>宋体</td>
+<td>下划线</td>
+<td>蓝</td>
+<td>3</td>
+</tr>
+<tr>
+<td>7</td>
+<td>楷体</td>
+<td>粗体</td>
+<td>红</td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>楷体</td>
+<td>斜体</td>
+<td>绿</td>
+<td>2</td>
+</tr>
+<tr>
+<td>9</td>
+<td>楷体</td>
+<td>下划线</td>
+<td>蓝</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<hr>
+<p>（6）场景法</p>
+<ul>
+<li><p>用流程图描述用户的使用场景</p>
+<p>覆盖流程路径来设计测试用例，从流程图开始到结束，有几条路径就是几条测试用例</p>
+</li>
+<li><p>使用步骤</p>
+<p>明确需求</p>
+<p>画出流程图</p>
+<p>根据流程图编写测试用例</p>
+</li>
+</ul>
+<hr>
+<p>（7）错误推测法</p>
+<p>错误推测法是指利用直觉和经验猜测出出错的可能类型，有针对性列举出程序中可能出错的测试用例 </p>
+<h3 id="7、软件缺陷"><a href="#7、软件缺陷" class="headerlink" title="7、软件缺陷"></a>7、软件缺陷</h3><p>（1）缺陷判定标准</p>
+<p>​    软件没有达到需求说明书标明的功能</p>
+<p>​    软件出现了需求说明书指明不会出现出错的地方</p>
+<p>​    软件超出了需求说明书指明的范围</p>
+<p>​    软件出现了需求说明书虽未指明，单应该达到的目标</p>
+<p>​    软件难以使用，效率低下</p>
+<p>（2）缺陷产生的根源</p>
+<p>​    需求变更</p>
+<p>​    交流不充分</p>
+<p>​    软件的复杂性</p>
+<p>​    进度压力</p>
+<p>（3）缺陷信息</p>
+<ul>
+<li><p>缺陷编号</p>
+</li>
+<li><p>缺陷状态</p>
+<pre><code>* new-新建
+   * open-打开
+* reopen-打开已经修复的缺陷
+* fixed-修复
+* closed-关闭
+* rejected-拒绝
+* postpone-拖延
+</code></pre>
+</li>
+<li><p>缺陷标题</p>
+</li>
+<li><p>严重程度</p>
+<pre><code>* 5-Critical    最高优先级
+   * 4-VeryHigh   非常高优先级
+* 3-High   高优先级
+* 2-Medium   中优先级
+* 1-Low   低优先级 
+</code></pre>
+</li>
+<li><p>优先级</p>
+<ul>
+<li>5-Critical    最高优先级</li>
+<li>4-VeryHigh   非常高优先级</li>
+<li>3-High   高优先级</li>
+<li>2-Medium   中优先级</li>
+<li>1-Low   低优先级 </li>
+</ul>
+</li>
+<li><p>所属模块</p>
+</li>
+<li><p>缺陷的详细描述</p>
+</li>
+</ul>
+<h3 id="8、缺陷报告注意事项"><a href="#8、缺陷报告注意事项" class="headerlink" title="8、缺陷报告注意事项"></a>8、缺陷报告注意事项</h3><ul>
+<li>缺陷书写简短、准确、规范</li>
+<li>缺陷复现步骤</li>
+<li>一个缺陷一个报告</li>
+<li>避免出现模糊的词汇</li>
+<li>bug描述一定要详细</li>
+</ul>
+<h3 id="9、缺陷跟踪流程"><a href="#9、缺陷跟踪流程" class="headerlink" title="9、缺陷跟踪流程"></a>9、缺陷跟踪流程</h3><ul>
+<li>new新建状态<ul>
+<li>要提交一个缺陷，首先就是新建状态</li>
+</ul>
+</li>
+<li>open打开状态<ul>
+<li>确认缺陷后，为打开状态</li>
+</ul>
+</li>
+<li>fixed修复状态<ul>
+<li>由缺陷的处理人，把缺陷处理完成之后设置为修复状态</li>
+</ul>
+</li>
+<li>closed关闭状态<ul>
+<li>验证缺陷修复后，一般由缺陷发起人设置状态为关闭状态</li>
+</ul>
+</li>
+<li>reopen重新打开状态<ul>
+<li>一个已经关闭的缺陷再次出现，就要设置为重新打开状态</li>
+</ul>
+</li>
+</ul>
+<h3 id="10、缺陷分析需要注意的点"><a href="#10、缺陷分析需要注意的点" class="headerlink" title="10、缺陷分析需要注意的点"></a>10、缺陷分析需要注意的点</h3><ul>
+<li>哪个模块问题最多</li>
+<li>哪个测试的缺陷最多</li>
+<li>各类缺陷数量的占比</li>
+<li>开发是否可以及时修复缺陷</li>
+<li>开发人员一次修复缺陷占比</li>
+<li>软件是否可以按时发布</li>
+</ul>
+<h3 id="11、非功能测试"><a href="#11、非功能测试" class="headerlink" title="11、非功能测试"></a>11、非功能测试</h3><ul>
+<li>兼容性测试<ul>
+<li>在不同的操作系统、不同的浏览器、不同的分辨率下，软件是否正常运行</li>
+</ul>
+</li>
+<li>界面测试<ul>
+<li>也叫UI测试，关注软件的外观，产品与原型图或者UI设计图是否一致，是否有基本的错误</li>
+</ul>
+</li>
+<li>易用性测试<ul>
+<li>站在用户的角度，判断软件是否易动、易学、易用</li>
+</ul>
+</li>
+<li>性能测试<ul>
+<li>验证软件是否达到预期的性能指标</li>
+<li>通过软件测试发现存在的性能瓶颈，以便优化软件</li>
+<li>测试软件在高负载下的稳定性</li>
+</ul>
+</li>
+<li>安全性测试<ul>
+<li>测试软件的安全性，保证用户信息不会泄露</li>
+</ul>
+</li>
+</ul>
+<h3 id="12、测试报告"><a href="#12、测试报告" class="headerlink" title="12、测试报告"></a>12、测试报告</h3><ul>
+<li><p>测试报告是测试工作的最后的一项</p>
+</li>
+<li><p>主要内容</p>
+<ul>
+<li><p>测试工作的经过与结果</p>
+</li>
+<li><p>风险评估</p>
+</li>
+<li><p>缺陷汇总与分析</p>
+</li>
+<li><p>测试工作的总结与改进</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="六、测试环境"><a href="#六、测试环境" class="headerlink" title="六、测试环境"></a>六、测试环境</h2><h3 id="1、基础环境介绍"><a href="#1、基础环境介绍" class="headerlink" title="1、基础环境介绍"></a>1、基础环境介绍</h3><ul>
+<li><p>LNMP</p>
+<p>Linux+Nginx+MySQL+PHP</p>
+</li>
+<li><p>WAMP</p>
+<p>Windows+Apache+MySQL+PHP</p>
+</li>
+</ul>
+<h3 id="2、环境搭建"><a href="#2、环境搭建" class="headerlink" title="2、环境搭建"></a>2、环境搭建</h3><ul>
+<li>B/S架构：浏览器/服务器模式</li>
+<li>web server<ul>
+<li>服务器</li>
+<li>安装服务器操作系统（Linux、Unix、Windows server）</li>
+<li>web服务器（Nginx、apache）</li>
+<li>数据库（MySQL、orcale）</li>
+<li>业务功能软件（Java、PHP、python）</li>
+</ul>
+</li>
+</ul>
+<h2 id="七、HTTP协议"><a href="#七、HTTP协议" class="headerlink" title="七、HTTP协议"></a>七、HTTP协议</h2><h3 id="1、HTTP原理"><a href="#1、HTTP原理" class="headerlink" title="1、HTTP原理"></a>1、HTTP原理</h3><ul>
+<li>客户端/浏览器client        服务器server<ul>
+<li>client发起一个请求，server回一个响应</li>
+</ul>
+</li>
+<li>HTTP超文本传输协议是应用层的协议，常基于TCP/IP协议传输数据</li>
+<li>TCP需要三次握手来建立连接，四次挥手来中断连接</li>
+</ul>
+<h3 id="2、HTTP请求和响应格式"><a href="#2、HTTP请求和响应格式" class="headerlink" title="2、HTTP请求和响应格式"></a>2、HTTP请求和响应格式</h3><ul>
+<li>HTTP请求<ul>
+<li>请求头、请求行、请求数据</li>
+</ul>
+</li>
+<li>HTTP响应<ul>
+<li>状态码、响应头、响应数据</li>
+</ul>
+</li>
+</ul>
+<h3 id="3、HTTP响应状态码"><a href="#3、HTTP响应状态码" class="headerlink" title="3、HTTP响应状态码"></a>3、HTTP响应状态码</h3><ul>
+<li>1xx：指示信息–表示请求已接收，继续处理</li>
+<li>2xx：成功–表示请求已被成功接收、理解、接受</li>
+<li>3xx：重定向–要完成请求必须进行更进一步的操作</li>
+<li>4xx：客户端错误–请求有语法错误或请求无法实现</li>
+<li>5xx：服务器端错误–服务器未能实现合法的请求</li>
+</ul>
+<h3 id="4、http请求中get和post的区别"><a href="#4、http请求中get和post的区别" class="headerlink" title="4、http请求中get和post的区别"></a>4、http请求中get和post的区别</h3><ul>
+<li>get<ul>
+<li>不安全</li>
+<li>发送数据有长度限制</li>
+<li>速度快</li>
+</ul>
+</li>
+<li>post<ul>
+<li>安全</li>
+<li>发送数据量大</li>
+<li>速度慢</li>
+</ul>
+</li>
+</ul>
+<h2 id="八、"><a href="#八、" class="headerlink" title="八、"></a>八、</h2><h3 id="1、"><a href="#1、" class="headerlink" title="1、"></a>1、</h3>
       
 
       
@@ -347,8 +1178,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2021/06/16/java%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">java基础</div>
+    <a href="/2021/06/16/%E8%BD%AF%E8%80%83%E5%88%9D%E7%BA%A7/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">软考</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -485,10 +1316,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
